@@ -1,0 +1,245 @@
+:root { 
+    --color-primary: #18534F;
+    --color-secondary: #226D68;
+    --color-tertiary: #04a096;
+    --color-light: #FAF0E6;
+    --color-contrast: #D6955B;
+    --color-contrast-light: #fbeebe;
+    --color-page: #f4f4f4;
+    --shadow-color: #5e5d5dcc;
+    --color-contrast-hover: #d6955b8a;
+}
+
+body {
+    background-color: var(--color-page);
+    width: 95%;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 1em;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+h1, h2, h3, h4 {
+    margin: 0.2em 0;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--color-secondary);
+    padding-bottom: 5px;
+    border-bottom: var(--color-contrast) solid 2px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: var(--color-tertiary);
+}
+
+h4 {
+    font-size: 1.1em;
+    color: var(--color-contrast);
+    font-weight: 400;
+    margin: 0.4em 0;
+}
+
+ul {
+    line-height: 1.3em;
+}
+
+.link {
+    background-color: var(--color-contrast);
+    color: white;
+    border-radius: 5px;
+    padding: 3px 8px 3px 8px;
+    font-weight: 600;
+    border: none;
+}
+
+.link:hover {
+    background-color: var(--color-contrast-hover);
+}
+
+header {
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    background-color: var(--color-primary);
+}
+
+header h1, header h2, header p, header ul {
+    color: var(--color-light);
+}
+
+header h2 {
+    border: none;
+    margin-bottom: 1em;
+}
+
+header section p {
+    font-style: italic;
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
+}
+
+#titles-container {
+    width: 100%;
+    margin-left: 1em;
+}
+
+#introduction {
+    display: inline-flex;
+    width: 100%;
+}
+
+#contact {
+    width: 100%;
+    display: inline-block;
+}
+
+#introduction img {
+    max-width: 150px;
+    border-radius: 100%;
+    margin: 1em;
+}
+
+#contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact ul li {
+    margin: 0.3em 1.5em 0.3em 1.5em;
+}
+
+.icon {
+    width: 20px;
+}
+
+.white {
+    filter: invert(100%);
+}
+
+.dates {
+    color: var(--color-contrast);
+    font-weight: 550;
+    font-size: small;
+}
+
+.emphasize {
+    font-weight: 450;
+}
+
+main section {
+    box-shadow: 5px 5px 10px 2px var(--shadow-color);
+    margin: 0 0 1em 0;
+    padding: 1em;
+}
+
+#professional_experiences ul, #trainings ul {
+    list-style-type: disc;
+    padding: 0.3em 1em 0 1em;
+}
+
+/* ul second level */
+#professional_experiences ul ul {
+    list-style-type: circle;
+}
+
+.flags {
+    width: 16px;
+}
+
+#it-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-container {
+    min-width: 250px;
+    margin: 0 1em 0 0;
+}
+
+.skill-progress-container {
+    width: 100%;
+    color: #000;
+    background-color: var(--color-contrast-light);
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+    margin: 0.2em 0 0.5em 0;
+    display: inline-flex;
+}
+
+.skill-progress {
+    padding: 0.3em 0 0 0.3em;
+    height: 1.2em;
+    font-size: smaller;
+    color: #fff;
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+}
+
+.software-skills-container {
+    margin-bottom: 10px;
+}
+
+#languages li {
+    margin-top: 0.3em;
+}
+
+footer {
+    padding: 1em;
+    font-size: 10px;
+    border-top: solid #ccccccc6 0.1em;
+    color: #333;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    main section {
+        margin: 1em;
+    }
+
+    #introduction {
+        text-align: center;
+    }
+
+    #introduction img {
+        display: none;
+    }
+
+    #it-skills {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1079px) {
+    body {
+        /* background-color: rgba(222, 184, 135, 0.501); */
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    body {
+        /* background-color: rgba(255, 248, 220, 0.502); */
+    }
+}
